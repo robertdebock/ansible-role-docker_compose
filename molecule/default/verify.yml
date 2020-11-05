@@ -7,5 +7,3 @@
   tasks:
     - name: check docker-compose
       command: docker-compose --version
-      environment:
-        PATH: /bin:/usr/bin:/usr/local/bin

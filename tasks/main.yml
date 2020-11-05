@@ -13,7 +13,7 @@
 - name: install docker-compose binary
   get_url:
     url: "{{ docker_compose_url }}"
-    dest: /usr/local/bin/docker_compose
+    dest: /usr/local/bin/docker-compose
     mode: "0755"
   when:
     - ansible_distribution in ["RedHat", "CentOS"] and
