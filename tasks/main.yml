@@ -1,17 +1,16 @@
 ---
 # tasks file for docker_compose
 
-- name: install docker-compose package
-  package:
-    name: docker-compose
-    state: present
-  when:
-    - ansible_distribution not in ["Amazon", "CentOS", "RedHat"]
+- name: install docker-compose
+  block:
+    - name: install docker-compose package
+      package:
+        name: docker-compose
+        state: present
 
-- name: install docker-compose binary
-  get_url:
-    url: "{{ docker_compose_url }}"
-    dest: /usr/local/bin/docker-compose
-    mode: "0755"
-  when:
-    - ansible_distribution in ["Amazon", "CentOS", "RedHat"]
+  rescue:
+    - name: install docker-compose binary
+      get_url:
+        url: "{{ docker_compose_url }}"
+        dest: /usr/local/bin/docker-compose
+        mode: "0755"
