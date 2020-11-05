@@ -1,0 +1,19 @@
+---
+# tasks file for docker_compose
+
+- name: install docker-compose package
+  package:
+    name: docker-compose
+    state: present
+  when:
+    - ansible_distribution not in ["RedHat", "CentOS"]
+    - ansible_distribution_major_version != "8"
+
+- name: install docker-compose binary
+  get_url:
+    url: "{{ docker_compose_url }}"
+    dest: /usr/local/bin/docker_compose
+    mode: "0755"
+  when:
+    - ansible_distribution in ["RedHat", "CentOS"]
+    - ansible_distribution_major_version == "8"

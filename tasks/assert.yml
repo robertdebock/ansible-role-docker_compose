@@ -1,0 +1,8 @@
+---
+
+- name: test if docker_compose_version is set correctly
+  assert:
+    that:
+      - docker_compose_version is defined
+      - docker_compose_version | version_compare('1.27.3', '>')
+    quiet: yes
