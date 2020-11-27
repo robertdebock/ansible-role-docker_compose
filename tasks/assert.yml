@@ -4,5 +4,6 @@
   assert:
     that:
       - docker_compose_version is defined
+      - docker_compose_version is string
       - docker_compose_version | version_compare('1.27.3', '>')
     quiet: yes
