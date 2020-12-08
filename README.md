@@ -2,9 +2,9 @@
 
 Install docker_compose.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-docker_compose.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-docker_compose)|[![github](https://github.com/robertdebock/ansible-role-docker_compose/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-docker_compose/actions)|[![quality](https://img.shields.io/ansible/quality/51647)](https://galaxy.ansible.com/robertdebock/docker_compose)|[![downloads](https://img.shields.io/ansible/role/d/51647)](https://galaxy.ansible.com/robertdebock/docker_compose)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-docker_compose.svg)](https://github.com/robertdebock/ansible-role-docker_compose/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-docker_compose.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-docker_compose)|[![github](https://github.com/robertdebock/ansible-role-docker_compose/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-docker_compose/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-docker_compose/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-docker_compose)|[![quality](https://img.shields.io/ansible/quality/51647)](https://galaxy.ansible.com/robertdebock/docker_compose)|[![downloads](https://img.shields.io/ansible/role/d/51647)](https://galaxy.ansible.com/robertdebock/docker_compose)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-docker_compose.svg)](https://github.com/robertdebock/ansible-role-docker_compose/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
