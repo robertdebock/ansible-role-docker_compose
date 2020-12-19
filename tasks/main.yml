@@ -1,6 +1,10 @@
 ---
 # tasks file for docker_compose
 
+- name: include assert.yml
+  include_tasks: assert.yml
+  run_once: yes
+
 - name: install docker-compose
   block:
     - name: install docker-compose package
