@@ -9,13 +9,13 @@
 - name: install docker-compose
   block:
     - name: install docker-compose package
-      package:
+      ansible.builtin.package:
         name: docker-compose
         state: present
 
   rescue:
     - name: install docker-compose binary
-      get_url:
+      ansible.builtin.get_url:
         url: "{{ docker_compose_url }}"
         dest: /usr/local/bin/docker-compose
         mode: "0755"
