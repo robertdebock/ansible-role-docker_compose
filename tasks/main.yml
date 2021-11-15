@@ -12,9 +12,7 @@
       ansible.builtin.package:
         name: docker-compose
         state: present
-
   rescue:
-
     - name: install docker-compose binary
       ansible.builtin.get_url:
         url: "{{ docker_compose_url }}"
