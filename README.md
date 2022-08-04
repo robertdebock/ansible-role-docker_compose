@@ -41,8 +41,6 @@ The default values for the variables are set in `defaults/main.yml`:
 ---
 # defaults file for docker_compose
 
-# The version of docker-compose to install when not using a package.
-# For available versions, see: https://github.com/docker/compose/releases
 docker_compose_version: "1.27.4"
 ```
 
