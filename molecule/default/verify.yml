@@ -5,7 +5,7 @@
   gather_facts: yes
 
   tasks:
-    - name: check docker-compose
+    - name: Check docker-compose
       ansible.builtin.command:
         cmd: docker-compose --version
       environment:
