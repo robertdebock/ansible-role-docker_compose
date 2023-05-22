@@ -1,6 +1,6 @@
 ---
 
-- name: Test if docker_compose_version is set correctly
+- name: assert | Test if docker_compose_version is set correctly
   ansible.builtin.assert:
     that:
       - docker_compose_version is defined
