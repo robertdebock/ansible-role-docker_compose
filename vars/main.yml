@@ -1,6 +1,14 @@
 ---
 # vars file for docker_compose
 
+# A map to relate the Ansible architecture to the Docker Compose architecture.
+_docker_compose_architecture:
+  x86_64: x86_64
+  arm64: aarch64
+docker_compose_architecture: "{{ _docker_compose_architecture[ansible_architecture] }}"
+
+# The type of installation (either `package` or `binary`) depends on the
+# distribution, os_family and distribution_major release.
 _docker_compose_installation_type:
   default: package
   Amazon: binary

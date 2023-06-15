@@ -52,7 +52,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 docker_compose_version: "v2.18.1"
 
 # Where to download the docker binary from.
-docker_compose_url: "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-linux-x86_64"
+docker_compose_url: "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-{{ system | lower }}-{{ docker_compose_architecture }}"
 ```
 
 ## [Requirements](#requirements)
