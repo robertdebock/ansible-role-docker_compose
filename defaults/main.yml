@@ -2,3 +2,4 @@
 # defaults file for docker_compose
 
 docker_compose_version: "1.27.4"
+docker_compose_url: "https://github.com/docker/compose/releases/download/v{{ docker_compose_version }}/docker-compose-linux-x86_64"
