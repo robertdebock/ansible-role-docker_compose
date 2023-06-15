@@ -12,7 +12,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- name: converge
+- name: Converge
   hosts: all
   become: yes
   gather_facts: yes
@@ -44,7 +44,11 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 # defaults file for docker_compose
 
-docker_compose_version: "1.27.4"
+# The version of Docker compose to install.
+docker_compose_version: "2.18.1"
+
+# Where to download the docker binary from.
+docker_compose_url: "https://github.com/docker/compose/releases/download/v{{ docker_compose_version }}/docker-compose-linux-x86_64"
 ```
 
 ## [Requirements](#requirements)
