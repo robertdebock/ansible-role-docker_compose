@@ -9,4 +9,4 @@
       ansible.builtin.command:
         cmd: docker-compose --version
       environment:
-        PATH: /bin:/usr/bin:/usr/local/bin
+        PATH: /bin:/usr/bin:/usr/local/bin:/usr/libexec/docker/cli-plugins
