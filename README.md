@@ -1,4 +1,4 @@
-# Ansible role [docker_compose](#docker_compose)
+# [Ansible role docker_compose](#docker_compose)
 
 Install docker_compose.
 
