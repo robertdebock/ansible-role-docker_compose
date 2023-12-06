@@ -15,7 +15,7 @@ _docker_compose_installation_type:
   RedHat:
     default: package
     "9": binary
-docker_compose_installation_type: "{{ _docker_compose_installation_type[ansible_distribution][ansible_distribution_major_version] | default(_docker_compose_installation_type[ansible_distribution]['default']) | default(_docker_compose_installation_type[ansible_distribution]) | default(_docker_compose_installation_type['default']) }}"
+docker_compose_installation_type: "{{ _docker_compose_installation_type[ansible_os_family][ansible_distribution_major_version] | default(_docker_compose_installation_type[ansible_os_family]['default']) | default(_docker_compose_installation_type[ansible_distribution]) | default(_docker_compose_installation_type['default']) }}"
 
 _docker_compose_binary_required_packages:
   default: []
